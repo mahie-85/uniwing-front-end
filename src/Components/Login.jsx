@@ -1,58 +1,12 @@
-// import React from 'react'
-// import { Row, Col, Card } from 'react-bootstrap'
-// import '../Components/Login.css'
-
-// const Login = () => {
-//   return (
-//     <div>
-//       <div className="loginpage">
-//         <Row>
-//           <Col lg={3}> </Col>
-//           <Col lg={6}>
-//             <Card className="log-card" style={{ border: 'none', borderRadius: '15px', }}>
-//               <div className="log-cardin">
-//                 <p className="login-h1"> Log in to support portal </p>
-//                 <p className="login-h2"> Are you a new user? <a href='/signup' className="log-signup"> Sign up with us </a> </p>
-//                 <p className="login-h3"> Your e-mail address <span className="log-star"> * </span> </p>
-//                 <input type="text" className="input" placeholder='Your e-mail address' />
-//                 <p className="login-h3"> Password <span className="log-star"> * </span> </p>
-//                 <input type="password" className="input" placeholder='Password' />
-//                 <p className="login-h4">
-//                   <input type="checkbox" className="log-checkbox" /> Remember me on this computer
-//                 </p>
-//                 <p className="loginbutton">
-//                   <button className="loginbuttonin"> Login </button>
-//                 </p>
-//                 <p className="log-forgotpassword">
-//                   <a href="#" className="log-forgotpasswordin"> Forgot your password? </a>
-//                 </p>
-//               </div>
-//             </Card>
-
-//             <div className="log-already"> Are you an agent? <a href="#" className="loginhere"> Login here </a> </div>
-//           </Col>
-//           <Col lg={3}> </Col>
-//         </Row>
-
-
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Login
-
-
-
-
-
-
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { Row, Col, Card } from 'react-bootstrap'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import '../Components/Login.css'
 import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
+import axios from 'axios';
+
 
 
 const Login = () => {
@@ -94,15 +48,14 @@ const handleSubmit = async () => {
   try{
     const response = await axios.post('http://localhost:8080/login', postdata)
     console.log(response.data);
-    setUser(response.data.data)
     Swal.fire({
       title:'login successfully !!!',
       icon:'success'
     })
     navigate("/dashboard")
-  } catch(err) {
+  } catch {
     Swal.fire({ 
-      title:'error occured try again later!!!',
+      title:'error occured try again later !!!',
       icon:'warning'
     })
   }
@@ -132,9 +85,7 @@ const handleSubmit = async () => {
                 <Formik
                   initialValues={{ email: '', password: '' }}
                   validationSchema={validationSchema}
-                  onSubmit={(values) => {
-                    console.log('Form submitted', values)
-                  }}
+                  onSubmit={handleSubmit}
                 >
                   {({handleSubmit, handleChange}) => ( 
 

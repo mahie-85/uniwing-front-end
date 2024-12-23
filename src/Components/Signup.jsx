@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Row, Col, Card } from 'react-bootstrap'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
@@ -47,13 +47,13 @@ const Signup = () => {
     try {
       const response = await axios.post("http://192.168.1.106:8080/register", postdata)
       console.log(response.data)
-      setUser(response.data.data)
+      // setUser(response.data.data)
       Swal.fire({
         title: "Registered Successfully !!!",
         icon: "success"
       })
       navigate("/")
-    } catch (err) {
+    } catch  {
       Swal.fire({
         title: "Error Occurred, Try Again Later !!!",
         icon: "warning"
