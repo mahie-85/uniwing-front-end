@@ -1,0 +1,119 @@
+/* Signup Page Container */
+.signuppage {
+    background-color: #F5F7F9;
+    width: 100%;
+}
+
+/* Card Styles */
+.signup-cardin {
+    background-color: #FFFFFF;
+    color: #12344D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.signup-card {
+    margin-top: 80px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Signup Title */
+.signup-h1 {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.signup-h2 {
+    font-size: medium;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.signup-h3 {
+    margin-top: 16px;
+    font-size: medium;
+    font-weight: 640;
+}
+
+.signup-link {
+    text-decoration: none;
+    font-weight: 650;
+}
+
+.signup-link:hover {
+    color: black;
+}
+
+/* Input Fields */
+.signup-input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1.5px solid lightgrey;
+    padding-left: 15px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+/* Gender Select */
+.gender-select {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1.5px solid lightgrey;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+
+
+
+/* Button Styles */
+.signup-btnin {
+    width: 100%;
+    color: white;
+    background-color: #12344D;
+    border: none;
+    border-radius: 4px;
+    height: 45px;
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Links */
+.signup-already {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.signup-loginhere {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+}
+
+.signup-loginhere:hover {
+    color: black;
+}
+
+.asterisk{
+    color: red;
+}
+
+
+

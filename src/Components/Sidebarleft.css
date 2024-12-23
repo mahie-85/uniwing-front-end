@@ -1,0 +1,104 @@
+.sidebar-l {
+    background-color: #12344D;
+    height: 100vh;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sidebar-l-card{
+    background-color: #F5F7F9;
+    height: 100px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.sidebar-l-img{
+    height: 50px;
+    width: 50px; 
+}
+
+.sidebar-l-names{
+    margin: auto;
+    font-size: large;
+    font-weight: 640;
+}
+
+.sidebar-l-cardin{
+
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+
+
+
+/* Media query for screens smaller than 1024px */
+@media screen and (max-width: 1024px) {
+    .sidebar-l-names {
+        display: none; /* Hide text on smaller screens */
+    }
+
+    .sidebar-l-img {
+        height: 30px; /* Make icons smaller for mobile */
+        width: 30px;
+    }
+
+    .sidebar-l {
+        width: 60px; /* Narrow down the sidebar width to just icons */
+        justify-content: flex-start; /* Align items to the top */
+        padding: 30px;
+
+    }
+
+    .sidebar-l-card {
+        height: 50px; /* Slightly larger card height for medium screens */
+        width: 50px;  /* Adjust card width for medium screens */
+        margin-bottom: 8px;  /* Reduce gap between cards */
+
+
+    }
+
+    .sidebar-l-cardin {
+        justify-content: space-evenly; /* Ensure the content inside the card remains centered */
+    }
+}
+
+/* Media query for very small screens like 320px */
+@media screen and (max-width: 320px) {
+    .sidebar-l {
+        width: 45px; /* Further reduce sidebar width for very small screens */
+        padding: 15px;
+
+    }
+
+    .sidebar-l-img {
+        height: 25px; /* Make icons even smaller for very small screens */
+        width: 25px;
+    }
+
+    .sidebar-l-card {
+        height: 35px; /* Smaller card height */
+        width: 35px;  /* Smaller card width */
+        margin-bottom: 5px;  /* Further reduce gap between cards */
+   
+    }
+
+    .sidebar-l-cardin {
+        justify-content: space-evenly; /* Ensure the content inside the card remains centered */
+    }
+}

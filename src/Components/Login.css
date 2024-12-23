@@ -1,0 +1,117 @@
+/* Login Page Container */
+.loginpage {
+    background-color: #F5F7F9;
+    width: 100%;
+}
+
+/* Card Styles */
+.log-cardin {
+    background-color: #FFFFFF;
+    color: #12344D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.log-card {
+
+    margin-top: 80px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Login Title */
+.login-h1 {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.login-h2 {
+    font-size: medium;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.login-h3, .login-h4 {
+    margin-top: 16px;
+
+    font-size: medium;
+    font-weight: 640;
+}
+
+.log-signup{
+    text-decoration: none;
+    font-weight: 650;
+}
+.log-signup:hover{
+    color: black;
+}
+
+.log-star {
+    color: red;
+}
+
+/* Input Fields */
+.input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1.5px solid lightgrey;
+    padding-left: 15px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+/* Checkbox */
+.log-checkbox {
+    margin-top: 0px;
+    width: 16px;
+    height: 16px;
+    accent-color: #12344D;
+}
+
+/* Button Styles */
+.loginbuttonin {
+    width: 100%;
+    color: white;
+    background-color: #12344D;
+    border: none;
+    border-radius: 4px;
+    height: 45px;
+    font-size: medium;
+    font-weight: 600;
+
+}
+
+/* Links */
+.log-forgotpassword{
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+.log-forgotpasswordin {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.log-forgotpasswordin:hover, .loginhere:hover {
+    color: black;
+}
+
+.log-already{
+    margin-top: 12px;
+    margin-bottom: 12px;
+   text-align: center;
+   font-size: larger;
+   font-weight: 600;
+}
+
+.loginhere{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+}

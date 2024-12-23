@@ -1,0 +1,69 @@
+.footer-container {
+    align-items: end;
+}
+
+.footer {
+    background-color: #12344D;
+    height: 68px;
+    width:  100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.helpdesk-software {
+
+    background-color: #12344D;
+    text-decoration: none;
+    color: lightgray;
+    padding-right: 20px;
+}
+
+.freshdesk {
+    background-color: #12344D;
+
+}
+
+.freshdesk-a {
+    background-color: #12344D;
+    padding-right: 20px;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.cookie-policy {
+    background-color: #12344D;
+
+}
+
+.cookie-policy-a {
+    padding-right: 20px;
+    background-color: #12344D;
+    text-decoration: underline;
+    color: lightgray;
+
+
+}
+
+.privacy-policy {
+    background-color: #12344D;
+
+}
+
+.privacy-policy-a {
+    padding-right: 20px;
+    background-color: #12344D;
+    text-decoration: underline;
+    color: white;
+
+}
+
+
+.freshdesk-line {
+    font-size: x-large;
+    padding-right: 20px;
+    font-weight: 100;
+    background-color: #12344D;
+}

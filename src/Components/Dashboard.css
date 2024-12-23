@@ -1,0 +1,201 @@
+/* .dashboard{
+    background-color: red;
+    height:100vh;
+    width: 60vh;
+    text-align: center;
+
+}
+
+
+.d-makepost-card{
+    padding: 5px;
+    background-color: blue;
+
+}
+
+.d-makepost-card-heading{
+background-color: aqua;
+}
+
+
+.d-m-icn{
+    height: 10px;
+    width: 10px;
+} */
+
+
+
+/* General layout for the dashboard */
+.dashboard {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align content to the top */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    margin: 0; /* No margin */
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    overflow: hidden; /* Hide any overflow outside the container */
+  }
+  
+  /* Scrollable container for multiple posts */
+  .d-posts-container {
+    max-height: 600px; /* Set max height for scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%;
+    max-width: 600px; /* Same width for all cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center cards horizontally */
+    margin-top: 20px;
+  }
+  
+  /* Make a Post Section */
+  .d-makepost {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px; /* Set max width for make a post card */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .d-makepost-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for make a post */
+  }
+  
+  .d-makepost-card-header {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 7px 15px;
+  }
+  
+  .d-makepost-card-header i {
+    color: #007bff; /* Blue color for the pen icon */
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  /* Input and user image styles */
+  .d-makepost-body {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .d-makepost-userlogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .d-makepost-username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .d-makepost-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc; /* Underline effect */
+    margin-top: 10px;
+  }
+  
+  .d-makepost-input:focus {
+    border-bottom-color: #007bff; /* Blue underline when focused */
+  }
+  
+  /* Add options section */
+  .d-makepost-addoptions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .d-makepsot-addpic i {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  /* General Card Styling for Different Post Types */
+  .d-postcard {
+    margin-bottom: 20px;
+    width: 100%; /* Full width of parent container */
+    max-width: 600px; /* Same width as Make a Post card */
+  }
+  
+  .d-postcard-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light grey background for all posts */
+  }
+  
+  .d-postcard-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Blue text for headings */
+    padding: 12px 15px;
+  }
+  
+  .d-postcard-heading {
+    color: #007bff; /* Blue color for heading */
+  }
+  
+  .d-postcard-content {
+    padding: 15px;
+  }
+  
+  .d-postcard-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .d-postcard p {
+    font-size: 14px;
+    color: #000;
+    margin: 5px 0;
+  }
+  
+  .d-postcard-userlogo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .d-postcard-username {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .d-postcard-event-heading,
+  .d-postcard-room-heading,
+  .d-postcard-blood-heading,
+  .d-postcard-product-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Blue color for different categories */
+  }
+  
+  /* Adjustments for icons */
+  .bi {
+    font-size: 18px;
+  }
+  
+  .d-postcard-heading i {
+    margin-right: 10px;
+  }
+  
