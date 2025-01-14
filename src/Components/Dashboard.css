@@ -23,8 +23,16 @@ background-color: aqua;
     width: 10px;
 } */
 
-
-
+.blood-main{
+justify-content: center; /* Horizontally center the content */
+align-items: flex-start; /* Align content to the top */
+height: 100vh; /* Full viewport height */
+width: 100%; /* Full viewport width */
+margin: 0; /* No margin */
+background-color: #ffffff; /* White background */
+padding: 10px;
+overflow: hidden; /* Hide any overflow outside the container */
+}
 /* General layout for the dashboard */
 .dashboard {
     display: flex;
@@ -134,7 +142,11 @@ background-color: aqua;
     width: 100%; /* Full width of parent container */
     max-width: 600px; /* Same width as Make a Post card */
   }
-  
+  .d-postcard-card .card-body {
+    max-height: 200px;  /* Set a maximum height for the body */
+    overflow-y: auto;   /* Allow vertical scrolling if content exceeds the height */
+}
+
   .d-postcard-card {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -146,6 +158,9 @@ background-color: aqua;
     font-weight: bold;
     color: #007bff; /* Blue text for headings */
     padding: 12px 15px;
+  }
+  .blood-main{
+    height: 100vh;
   }
   
   .d-postcard-heading {

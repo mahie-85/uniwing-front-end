@@ -45,7 +45,7 @@ const Signup = () => {
     console.log(postdata)
 
     try {
-      const response = await axios.post("http://192.168.1.106:3000/register", postdata)
+      const response = await axios.post("http://localhost:8080/register", postdata)
       console.log(response.data)
       // setUser(response.data.data)
       Swal.fire({

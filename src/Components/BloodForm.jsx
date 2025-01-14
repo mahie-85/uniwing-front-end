@@ -32,7 +32,7 @@ const BloodForm = () => {
 
     const createProduct = async () => {
         try {
-            const response = await axios.post("http://localhost:3000/blood", bloodDonation)
+            const response = await axios.post("http://localhost:8080/blood", bloodDonation)
             console.log(response)
             Swal.fire({
                 title: "Successfully Blood Donation Details Added",

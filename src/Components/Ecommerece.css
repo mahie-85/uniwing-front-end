@@ -1,0 +1,39 @@
+.ecom-full{
+    background-color:orange;
+overflow-y: auto;
+
+}
+.ecommerece-card {
+    
+    overflow-y: auto;
+    /* height: auto; */
+    /* width: 100%;  */
+    /* margin: 0;  */
+    background-color: dark blue; /* White background */
+    padding: 10px;
+   margin-bottom: 30px;
+  }
+  .ecom-full{
+    height: 100vh;
+  }
+  .ecom-card{
+    margin-bottom: 50px;
+   
+  }
+  /* .card-body{
+   padding: none;     
+  } */
+  @media only screen and (max-width: 600px) {
+    .ecommmerece-card {
+      background-color: black;
+      width: 100vw;
+    }
+    .card-body{
+        padding: none;
+    }
+    .ecom-card{
+        margin-bottom: 50px;
+       
+      }
+  }
+ 

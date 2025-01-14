@@ -32,7 +32,7 @@ const EcommerceForm = () => {
 
     const createProduct = async () => {
         try {
-            const response = await axios.post("http://localhost:3000/ecommerce", product)
+            const response = await axios.post("http://localhost:8080/ecommerce", product)
             console.log(response)
             Swal.fire({
                 title: 'Data Added Successfully for Ecommerce Product',

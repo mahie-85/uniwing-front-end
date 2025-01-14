@@ -5,7 +5,7 @@ import userlogo from '../Images/dashboard/userlogo.png';
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import "./Events.css"
 
 const Events = () => {
 
@@ -16,7 +16,7 @@ const Events = () => {
     const fetchData = async () => {
         try {
 
-            const response = await axios.get('http://localhost:3000/event')
+            const response = await axios.get('http://localhost:8080/event')
             console.log(response.data.data.data)
             setEventData(response.data.data.data)
         } catch (err) {
@@ -29,15 +29,16 @@ const Events = () => {
     }, [])
 
     return (
+        <div className="eventcard">
         <div style={{ display: "flex", flexDirection: "row" }}>
             <div style={{ width: "20vw" }}>
                 <Sidebarleft />
             </div>
-            <div style={{ margin: "20px" }}>
+            <div  className="eventcard"style={{ margin: "20px" }}>
                 <Button style={{ marginBottom: '10px' }} onClick={() => navigate('/dashboard/events/forms')}>Add Post</Button>
                 {eventData.map((data, index) => (
 
-                    <div className="d-postcard" key={index}>
+                    <div className="eventpost-card" key={index}>
                         <Card className="d-postcard-card" >
                             <CardHeader className="d-postcard-header">
                                 <div className="d-postcard-heading">
@@ -63,6 +64,7 @@ const Events = () => {
             <div style={{ width: "20vw", marginLeft: "auto" }}>
                 <Sidebarrirght />
             </div>
+        </div>
         </div>
     )
 }

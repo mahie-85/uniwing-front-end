@@ -31,7 +31,7 @@ const EventForm = () => {
 
     const createProduct = async () => {
         try {
-            const response = await axios.post("http://localhost:3000/event", eventData);
+            const response = await axios.post("http://localhost:8080/event", eventData);
             console.log(response)
             Swal.fire({
                 title: "Event Added Successfully",

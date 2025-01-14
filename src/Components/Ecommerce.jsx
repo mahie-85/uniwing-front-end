@@ -5,7 +5,7 @@ import userlogo from '../Images/dashboard/userlogo.png';
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import "./Ecommerece.css"
 
 const Ecommerce = () => {
 
@@ -16,7 +16,7 @@ const Ecommerce = () => {
     const fetchData = async () => {
         try {
 
-            const response = await axios.get('http://localhost:3000/ecommerce')
+            const response = await axios.get('http://localhost:8080/ecommerce')
             console.log(response.data.data.data)
             setEcommerceData(response.data.data.data)
         } catch (err) {
@@ -29,16 +29,16 @@ const Ecommerce = () => {
     }, [])
 
     return (
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div className="ecom-full"style={{ display: "flex", flexDirection: "row" }}>
             <div style={{ width: "20vw" }}>
                 <Sidebarleft />
             </div>
-            <div style={{ margin: "20px" }}>
-                <Button style={{ marginBottom: '10px' }} onClick={() => navigate('/dashboard/ecommerce/forms')}>Add Post</Button>
+            <div className="ecommerece-card" style={{ margin: "20px" }}>
+                <Button style={{ marginBottom: '20px' }} onClick={() => navigate('/dashboard/ecommerce/forms')}>Add Post</Button>
                 {EcommerceData.map((data, index) => (
 
-                    <div className="d-postcard" key={index}>
-                        <Card className="d-postcard-card" >
+                    <div  key={index}>
+                        <Card  className="ecom-card">
                             <CardHeader className="d-postcard-header">
                                 <div className="d-postcard-heading">
                                     <img src={userlogo} className="d-postcard-userlogo" alt="User Logo" />
@@ -48,10 +48,10 @@ const Ecommerce = () => {
                             <CardBody>
                                 <div className="d-postcard-content">
                                     <div className="d-postcard-event-heading">{data.description}</div>
-                                    <p className="d-postcard-description"><span style={{color : 'black', fontWeight : "bold", fontSize : "25px"}}> ₹ {data.price}</span></p>
-                                    <div style={{display : "flex", flexDirection : 'row',margin : '10px'}}>
-                                    <Button style={{marginRight : "10px"}}>BUY</Button>
-                                    <Button>SELL</Button>
+                                    <p className="d-postcard-description"><span style={{ color: 'black', fontWeight: "bold", fontSize: "25px" }}> ₹ {data.price}</span></p>
+                                    <div style={{ display: "flex", flexDirection: 'row', margin: '10px' }}>
+                                        <Button style={{ marginRight: "10px" }}>BUY</Button>
+                                        <Button>SELL</Button>
                                     </div>
                                 </div>
                             </CardBody>
