@@ -1,5 +1,5 @@
 .eventcard{
-    background-color:violet;
+   
     overflow-y: auto;
     max-height: 430px;
     
@@ -11,7 +11,7 @@
         height: auto;
         /* width: 100%;  */
         margin: 0; /* No margin */
-        background-color:violet; /* White background */
+       ; /* White background */
         padding: 10px;
         /* Hide any overflow outside the container */
       }
